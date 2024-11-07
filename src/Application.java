@@ -12,7 +12,7 @@ public class Application {
         Scanner console = new Scanner(System.in);
         String title = "Введите цифру из списка ниже, чтобы выбрать операцию, которую необходимо выполнить:";
         System.out.println("=".repeat(title.length()));
-        System.out.println("Введите цифру из списка ниже, чтобы выбрать операцию, которую необходимо выполнить:");
+        System.out.println(title);
         System.out.println("=".repeat(title.length()));
         System.out.println("\t1. Шифрование");
         System.out.println("-".repeat(50));
