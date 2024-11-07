@@ -7,7 +7,4 @@ public class CharacterData {
 
     public static final int ALPHABET_FULL_SIZE = ALPHABET_FULL.length;
 
-    public static final List<String> KEY_CHARACTERS = Arrays.asList(" без ", " в " , " до " , " для ", " за " , " из ", " за ", " к ", " на ", " над ", " об ", " от ", " перед ", " под ", " при ", " с ", " у ", " через ", ". ", ", ", "? ", ": ", "; ", "! ", "-", ") ", " (", " ");
-
-
 }

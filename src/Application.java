@@ -22,7 +22,7 @@ public class Application {
         System.out.println("=".repeat(50));
 
 
-        try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
 
             switch (console.nextInt()) {
                 case 1: {
@@ -40,14 +40,11 @@ public class Application {
 
                     System.out.println("Файл зашифрован и записан по указанному пути");
                     break;
-
-
                 }
 
 
                 case 2: {
                     console.nextLine();
-
                     System.out.println("Введите путь файла для расшифрования текста:");
 
                     byte[] buffer = Files.readAllBytes(Path.of(reader.readLine()));
@@ -55,7 +52,6 @@ public class Application {
 
                     System.out.println("Введите ключ для расшифрования ввиде цифры:");
                     int decryptKey = Integer.parseInt(reader.readLine());
-
 
                     System.out.println("Введите путь для создания файла и записи расшифрованного текста:");
                     Path decryptFile = Files.createFile(Path.of(reader.readLine()));

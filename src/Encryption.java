@@ -1,6 +1,6 @@
 public class Encryption {
 
-    static String encryption(String encryptTextBefore, int encryptKey){
+    static String encryption(String encryptTextBefore, int encryptKey) {
         char[] encryptCharBefore = encryptTextBefore.toCharArray();
         char[] encryptCharAfter = new char[encryptCharBefore.length];
         boolean isPresence = false;
@@ -9,8 +9,8 @@ public class Encryption {
                 if (encryptCharBefore[i] == CharacterData.ALPHABET_FULL[k]) {
                     isPresence = true;
                 }
-                if (isPresence){
-                    encryptCharAfter[i] = CharacterData.ALPHABET_FULL[(k + encryptKey)% CharacterData.ALPHABET_FULL_SIZE];
+                if (isPresence) {
+                    encryptCharAfter[i] = CharacterData.ALPHABET_FULL[(k + encryptKey) % CharacterData.ALPHABET_FULL_SIZE];
                     isPresence = false;
                 }
             }
