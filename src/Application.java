@@ -38,7 +38,7 @@ public class Application {
                     Path encryptFile = Files.createFile(Path.of(reader.readLine()));
                     Files.writeString(encryptFile, Encryption.encryption(encryptTextBefore, encryptKey));
 
-                    System.out.println("Файл зашифрован и записан по указанному пути");
+                    System.out.println("Файл зашифрован и записан по указанному пути.");
                     break;
                 }
 
@@ -57,13 +57,17 @@ public class Application {
                     Path decryptFile = Files.createFile(Path.of(reader.readLine()));
                     Files.writeString(decryptFile, Decryption.decryption(decryptTextBefore, decryptKey));
 
-                    System.out.println("Файл расшифрован и записан по указанному пути");
+                    System.out.println("Файл расшифрован и записан по указанному пути.");
                     break;
                 }
 
                 case 0:
-                    System.out.println("Работа программы завершена");
+                    System.out.println("Работа программы завершена.");
                     System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Неверный код. Пожалуйста, введите код из списка выше.");
                     break;
             }
 
