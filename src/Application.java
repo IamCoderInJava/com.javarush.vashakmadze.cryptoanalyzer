@@ -42,7 +42,6 @@ public class Application {
                     break;
                 }
 
-
                 case 2: {
                     console.nextLine();
                     System.out.println("Введите путь файла для расшифрования текста:");
