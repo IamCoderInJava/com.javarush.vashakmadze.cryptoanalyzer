@@ -67,7 +67,7 @@ public class Application {
                     break;
 
                 default:
-                    System.out.println("Неверный код. Пожалуйста, введите код из списка выше.");
+                    System.out.println("Неверный код. Пожалуйста, введите цифру из списка выше.");
                     break;
             }
 
